@@ -1,10 +1,10 @@
-import '../styles/Login.css'
-import {createUser, getUser} from '../services/UserHandling.jsx';
-import { useState } from 'react';
+import "../styles/Login.css";
+import { createUser, getUser } from "../services/UserHandling.jsx";
+import { useState } from "react";
 
 function App() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
   const [user, setUser] = useState(null);
 
@@ -13,9 +13,9 @@ function App() {
       universityEmail: "test@pitt.edu",
       password: "pass",
       name: "Joe",
-      contactDetails: "0987654321"
+      contactDetails: "0987654321",
     };
-    createUser(data); 
+    createUser(data);
   };
 
   const handleGetUser = async (e) => {
@@ -28,28 +28,28 @@ function App() {
       if (user) {
         console.log(user);
         if (user.password === password) {
-          console.log('Login successful');
+          console.log("Login successful");
           setUser(user);
-          setEmail('');
-          setPassword('');
+          setEmail("");
+          setPassword("");
           setError(null);
         } else {
-          console.log('Login failed');
+          console.log("Login failed");
           setUser(null);
-          setPassword('');
-          setError('Incorrect password');
+          setPassword("");
+          setError("Incorrect password");
         }
       } else {
-        console.log('User not found');
+        console.log("User not found");
         setUser(null);
-        setPassword('');
-        setError('User not found.');
+        setPassword("");
+        setError("User not found.");
       }
     } catch (error) {
-      console.error('Error during GET request:', error);
+      console.error("Error during GET request:", error);
       setUser(null);
-      setPassword('');
-      setError('Error during GET request.');
+      setPassword("");
+      setError("Error during GET request.");
     }
   };
 
@@ -57,7 +57,7 @@ function App() {
     setUser(null);
   };
 
-  return(
+  return (
     <>
       {user ? (
         <div>
@@ -65,23 +65,36 @@ function App() {
           <button onClick={handleLogout}>Logout</button>
         </div>
       ) : (
+        // className = ''
         <div>
           <h1>Login Page</h1>
 
           <form onSubmit={handleGetUser}>
             <label htmlFor="email">Email</label>
-            <input type="text" placeholder="Enter email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input
+              type="text"
+              placeholder="Enter email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
             <label htmlFor="password">Password</label>
-            <input type="password" placeholder="Enter password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <input
+              type="password"
+              placeholder="Enter password"
+              name="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
             <button type="submit">Login</button>
-            {error && <p style={{ color: 'red' }}>{error}</p>}
+            {error && <p style={{ color: "red" }}>{error}</p>}
           </form>
-          
+
           <button onClick={handleData}>Register Test User</button>
         </div>
       )}
     </>
-  )
+  );
 }
 
 export default App;

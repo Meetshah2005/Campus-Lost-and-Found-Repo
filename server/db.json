@@ -6,6 +6,48 @@
       "password": "pass",
       "name": "Joe",
       "contactDetails": "0987654321"
+    },
+    {
+      "id": "4ff9",
+      "universityEmail": "test@pitt.edu",
+      "password": "pass",
+      "name": "Joe",
+      "contactDetails": "0987654321"
+    },
+    {
+      "id": "04ed",
+      "universityEmail": "test@pitt.edu",
+      "password": "pass",
+      "name": "Joe",
+      "contactDetails": "0987654321"
+    },
+    {
+      "id": "f1c7",
+      "universityEmail": "test@pitt.edu",
+      "password": "pass",
+      "name": "Joe",
+      "contactDetails": "0987654321"
+    },
+    {
+      "id": "a081",
+      "universityEmail": "test@pitt.edu",
+      "password": "pass",
+      "name": "Joe",
+      "contactDetails": "0987654321"
+    },
+    {
+      "id": "de68",
+      "universityEmail": "test@pitt.edu",
+      "password": "pass",
+      "name": "Joe",
+      "contactDetails": "0987654321"
+    },
+    {
+      "id": "e452",
+      "universityEmail": "test@pitt.edu",
+      "password": "pass",
+      "name": "Joe",
+      "contactDetails": "0987654321"
     }
   ]
 }
