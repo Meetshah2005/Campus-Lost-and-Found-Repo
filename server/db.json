@@ -6,13 +6,6 @@
       "password": "pass",
       "name": "Joe",
       "contactDetails": "0987654321"
-    },
-    {
-      "id": "b0d0",
-      "universityEmail": "test@pitt.edu",
-      "password": "pass",
-      "name": "Joe",
-      "contactDetails": "0987654321"
     }
   ]
 }
