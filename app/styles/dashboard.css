@@ -1,9 +1,3 @@
-body {
-  margin: 0;
-  font-family: Poppins, sans-serif;
-  background: #f4f6f9;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -30,13 +24,13 @@ body {
   margin-left: 6px;
 }
 
-.profile-picture img{
-  width:50px;
+.profile-picture img {
+  width: 50px;
 }
 
 .feed {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   padding: 20px;
 }
@@ -44,7 +38,7 @@ body {
 .item {
   background: white;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -67,10 +61,11 @@ body {
   font-size: 14px;
   margin-top: 4px;
 }
+
 .report-button {
   margin-top: 10px;
   background-color: #B22B14;
-  color:white
+  color: white
 }
 
 .add-button {
