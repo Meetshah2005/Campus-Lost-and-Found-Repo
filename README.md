@@ -1,3 +1,9 @@
+**Campus Lost and Found**
+
+- DG1 Ease & Efficiency of Recovery :The system should minimize direct interaction between the user who lost an item and the user who found it. Under normal circumstances, the recovery process should require no more than 2 user interactions and it ensures that the item can be retrieved quickly and efficiently.
+- DG2 Ease of navigation: The system should feature a clear, intuitive, and user-friendly interface that allows users to navigate through the major functions of the platform in no more than 4 interactions promoting accessibility and reducing user frustration.
+- DG3 User and Data Security:  The system must protect all the user data and make sure user identities are anonymous through the system-generated aliases or user-chosen account names. Personal information such as name and contact information should only be disclosed when absolutely necessary(when an item is confirmed as found and a meeting must be arranged)
+
 # Welcome to React Router!
 
 A modern, production-ready template for building full-stack React applications using React Router.
