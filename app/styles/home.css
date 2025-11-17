@@ -1,10 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.3px;
+}
+
 .home-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  height: 100vh;
   background: url("/images/background2new.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(100px);
+  border-radius: 25px;
+}
+
+.navbar ul li a {
+  font-size: 15px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.navbar ul li a:hover {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.navbar-container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 225px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+  font-weight: bold;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  columns: #fff;
+}
+
+.content h1 {
+  font-size: 64px;
+  margin-top: 20px;
+}
+
+.content p {
+  margin: 25px auto;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  max-width: 650px;
+}
+
+.content button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  font-weight: bold;
+  border: 6px solid #5900ff;
+  background: #5900ff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 40px;
+  padding: 18px;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.content button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }

@@ -6,19 +6,41 @@ export const links = () => [
 ];
 
 export function meta({}) {
-  return [
-    { title: "Campus Lost and Found" }
-  ];
+  return [{ title: "Campus Lost and Found" }];
 }
 
 export default function Home() {
   return (
     <main className="home-page">
-      <h1 className="text-4xl text-center font-bold">Campus Lost and Found</h1>
-      <p className="text-center">Welcome to the Campus Lost and Found system. Please login to continue.</p>
-      <NavLink to="/login">
-        <Button>Login</Button>
-      </NavLink>
+      <div className="navbar">
+        <div className="navbar-container">
+          <img src="/images/logo.png" className="logo"></img>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Testimonies</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="content">
+        <h1>FIND YOUR MISSING ITEM</h1>
+        <p>
+          Lost an item? Sign up for FoundIT today to help you locate your
+          missing item on University of Pittsburgh campus.{" "}
+        </p>
+        <NavLink to="/login">
+          <Button>Sign Up Today</Button>
+        </NavLink>
+      </div>
     </main>
   );
 }
