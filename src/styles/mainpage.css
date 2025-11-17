@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: #f4f6f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003594;
+  padding: 12px 20px;
+  color: white;
+}
+
+.search-bar {
+  width: 35%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.nav-btn {
+  background: #0056d2;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.item .info {
+  padding: 8px;
+}
+
+.item .title {
+  font-weight: bold;
+}
+
+.item .location {
+  color: gray;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.add-button {
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  background: #ffb703;
+  border: none;
+  font-size: 22px;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
