@@ -66,31 +66,53 @@ function App() {
         </div>
       ) : (
         // className = ''
-        <div>
-          <h1>Login Page</h1>
+        <div className="wrapper">
+          <h1>Login</h1>
 
           <form onSubmit={handleGetUser}>
-            <label htmlFor="email">Email</label>
-            <input
-              type="text"
-              placeholder="Enter email"
-              name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              placeholder="Enter password"
-              name="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <button type="submit">Login</button>
+            <div className="input-box">
+              <input
+                type="text"
+                placeholder="Email"
+                required
+                name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <i class="bx  bxs-user"></i>
+            </div>
+            <div className="input-box">
+              <input
+                type="password"
+                placeholder="Password"
+                required
+                name="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <i class="bx  bxs-lock"></i>
+            </div>
+
+            <div className="forgot-password">
+              <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" className="btn">
+              Login
+            </button>
+
+            <div className="register-link">
+              <p>
+                Don't have an account? <a href="#">Register</a>
+              </p>
+            </div>
+
+            <button type="submit" className="register-btn" onClick={handleData}>
+              Register Test User
+            </button>
+
             {error && <p style={{ color: "red" }}>{error}</p>}
           </form>
-
-          <button onClick={handleData}>Register Test User</button>
         </div>
       )}
     </>
