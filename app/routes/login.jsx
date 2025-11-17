@@ -62,50 +62,51 @@ export default function Login() {
 
   return (
     <main className="login-page">
-    <div className="wrapper">
-      <h1>Login</h1>
+      <div className="wrapper">
+        <h1>Login</h1>
 
-      <form onSubmit={handleGetUser}>
-        <div className="input-box">
-          <input
-            type="text"
-            placeholder="Email"
-            required
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <i className="bx  bxs-user"></i>
-        </div>
-        <div className="input-box">
-          <input
-            type="password"
-            placeholder="Password"
-            required
-            name="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <i className="bx  bxs-lock"></i>
-        </div>
+        <form onSubmit={handleGetUser}>
+          <div className="input-box">
+            <input
+              type="text"
+              placeholder="Email"
+              required
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <i className="bx  bxs-user"></i>
+          </div>
+          <div className="input-box">
+            <input
+              type="password"
+              placeholder="Password"
+              required
+              name="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <i className="bx  bxs-lock"></i>
+          </div>
 
-        <div className="forgot-password">
-          <a href="#">Forgot password?</a>
-        </div>
+          <div className="forgot-password">
+            <a href="#">Forgot password?</a>
+          </div>
 
-        <button type="submit" className="btn">
-          Login
-        </button>
+          <button type="submit" className="btn">
+            Login
+          </button>
 
-        <div className="register-link">
-          <p>
-            Don't have an account? <a href="#">Register</a>
-          </p>
-        </div>
-
-        <button type="submit" className="register-btn" onClick={handleData}>
-          Register Test User
-        </button>
+          <div className="register-link">
+            <p>
+              Don't have an account? <a href="#">Register</a>
+            </p>
+          </div>
+          <div className="register-btn-bin">
+            <button type="submit" className="register-btn" onClick={handleData}>
+              Register Test User
+            </button>
+          </div>
 
           {error && <p style={{ color: "red" }}>{error}</p>}
         </form>
