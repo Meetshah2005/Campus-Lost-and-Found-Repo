@@ -30,6 +30,10 @@ body {
   margin-left: 6px;
 }
 
+.profile-picture img{
+  width:50px;
+}
+
 .feed {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -62,6 +66,11 @@ body {
   color: gray;
   font-size: 14px;
   margin-top: 4px;
+}
+.report-button {
+  margin-top: 10px;
+  background-color: #B22B14;
+  color:white
 }
 
 .add-button {
