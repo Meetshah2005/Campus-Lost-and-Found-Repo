@@ -89,6 +89,7 @@
   font-size: 16px;
   color: #333;
   font-weight: 600;
+  transition: 0.4s;
 }
 
 .wrapper .register-link {
@@ -124,4 +125,10 @@
   font-size: 16px;
   color: #333;
   font-weight: 600;
+  transition: 0.4s;
+}
+
+.wrapper button:hover {
+  transform: scale(1.025);
+  opacity: 0.9;
 }
