@@ -34,8 +34,8 @@ export default function Home() {
       <div className="content">
         <h1>FIND YOUR MISSING ITEM</h1>
         <p>
-          Lost an item? Sign up for FoundIT today to help you locate your
-          missing item on University of Pittsburgh campus.{" "}
+          Lost an item? Sign up for FoundIT today to help locate your missing
+          item on University of Pittsburgh campus.{" "}
         </p>
         <NavLink to="/login">
           <Button>Sign Up Today</Button>
