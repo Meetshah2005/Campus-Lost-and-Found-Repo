@@ -6,7 +6,7 @@ export default function Dashboard() {
   return (
     <>
       <nav className="navbar">
-        <div className="logo">Campus Lost & Found</div>
+        <div className="logo">FoundIt</div>
         <input type="text" className="search-bar" placeholder="Search items" />
         <div className="nav-links">
           <button className="nav-btn">Messages</button>
