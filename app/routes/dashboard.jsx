@@ -19,7 +19,7 @@ export default function Dashboard() {
 
       <div className="feed">
         <div className="item">
-          <img src="/images/image.png" alt="Lost Item" />
+          <img src="/images/backpack.png" alt="Lost Item" />
           <div className="info">
             <div className="title">Black Backpack</div>
             <div className="location">Hillman Library</div>
@@ -28,7 +28,7 @@ export default function Dashboard() {
         </div>
 
         <div className="item">
-          <img src="/images/background2.jpg" alt="Lost Item" />
+          <img src="/images/airpods.png" alt="Lost Item" />
           <div className="info">
             <div className="title">AirPods Case</div>
             <div className="location">Cathedral 3rd Floor</div>
@@ -37,15 +37,15 @@ export default function Dashboard() {
         </div>
 
         <div className="item">
-          <img src="/images/background2.jpg" alt="Lost Item" />
+          <img src="/images/bottle.png" alt="Lost Item" />
           <div className="info">
-            <div className="title">Pitt ID</div>
+            <div className="title">Pitt Water Bottle</div>
             <div className="location">Market</div>
             <button className="report-button">Report Found</button>
           </div>
         </div>
         <div className="item">
-          <img src="/images/background2.jpg" alt="Lost Item" />
+          <img src="/images/hydroflask.png" alt="Lost Item" />
           <div className="info">
             <div className="title">Blue Hydro Flask</div>
             <div className="location">Benedum</div>
@@ -54,7 +54,7 @@ export default function Dashboard() {
         </div>
 
         <div className="item">
-          <img src="/images/background2.jpg" alt="Lost Item" />
+          <img src="/images/watch.png" alt="Lost Item" />
           <div className="info">
             <div className="title">Apple Watch Series 7</div>
             <div className="location">Rec Center Locker Room</div>
@@ -63,16 +63,16 @@ export default function Dashboard() {
         </div>
 
         <div className="item">
-          <img src="/images/background2.jpg" alt="Lost Item" />
+          <img src="/images/keychain.png" alt="Lost Item" />
           <div className="info">
-            <div className="title">Set of Keys with Panther Keychain</div>
+            <div className="title">Pitt Panther Keychain</div>
             <div className="location">William Pitt Union</div>
             <button className="report-button">Report Found</button>
           </div>
         </div>
 
         <div className="item">
-          <img src="/images/background2.jpg" alt="Lost Item" />
+          <img src="/images/calc.png" alt="Lost Item" />
           <div className="info">
             <div className="title">TI-84+ Calculator</div>
             <div className="location">Thackeray Hall 213</div>
@@ -81,7 +81,7 @@ export default function Dashboard() {
         </div>
 
         <div className="item">
-          <img src="/images/background2.jpg" alt="Lost Item" />
+          <img src="/images/earring.png" alt="Lost Item" />
           <div className="info">
             <div className="title">Golden Earrings</div>
             <div className="location">Cathy Ground Floor Bathroom</div>
