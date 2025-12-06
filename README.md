@@ -9,7 +9,7 @@ The project is a Campus Lost and Found web application designed to help universi
 - DG3 User and Data Security:  The system must protect all the user data and make sure user identities are anonymous through the system-generated aliases or user-chosen account names. Personal information such as name and contact information should only be disclosed when absolutely necessary(when an item is confirmed as found and a meeting must be arranged)
 
 
-## **Run Instruction**
+# **Run Instruction**
 #### 0. If wanted, make a destination folder to house the repo within
 
 #### 1. Clone the repo
