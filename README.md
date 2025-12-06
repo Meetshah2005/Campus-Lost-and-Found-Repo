@@ -33,6 +33,6 @@ npm run start-all
 
 #### 5. Visit the provided link
 ```shell
-(http://localhost:5173/)
+http://localhost:5173/
 ```
 
