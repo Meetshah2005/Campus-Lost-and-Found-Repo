@@ -22,5 +22,13 @@ git clone https://github.com/Meetshah2005/Campus-Lost-and-Found-Repo.git
 cd Campus-Lost-and-Found-Repo
 ```
 
-#### 3. 
+#### 3. Install npm dependencies
+```shell
+npm install
+```
+
+#### 4. Visit the provided link
+```shell
+(http://localhost:5173/)
+```
 
