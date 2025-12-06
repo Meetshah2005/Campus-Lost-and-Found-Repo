@@ -10,7 +10,17 @@ The project is a Campus Lost and Found web application designed to help universi
 
 
 ## **Run Instruction**
+#### 0. If wanted, make a destination folder to house the repo within
+
 #### 1. Clone the repo
 ```shell
 git clone https://github.com/Meetshah2005/Campus-Lost-and-Found-Repo.git
 ```
+
+#### 2. Navigate to the project directory
+```shell
+cd Campus-Lost-and-Found-Repo
+```
+
+#### 3. 
+
