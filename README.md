@@ -26,8 +26,12 @@ cd Campus-Lost-and-Found-Repo
 ```shell
 npm install
 ```
+#### 4. Run app
+```shell
+npm run start-all
+```
 
-#### 4. Visit the provided link
+#### 5. Visit the provided link
 ```shell
 (http://localhost:5173/)
 ```
