@@ -1,6 +1,6 @@
 import { createUser, getUser } from "../services/UserHandling.js";
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate, Link } from "react-router";
 
 export const links = () => [
   { rel: "stylesheet", href: "/app/styles/login.css" },
@@ -13,16 +13,6 @@ export default function Login() {
   const [user, setUser] = useState(null);
 
   let navigate = useNavigate();
-
-  const handleData = () => {
-    const data = {
-      universityEmail: "test@pitt.edu",
-      password: "pass",
-      name: "Joe",
-      contactDetails: "0987654321",
-    };
-    createUser(data);
-  };
 
   const handleGetUser = async (e) => {
     e.preventDefault();
@@ -99,13 +89,8 @@ export default function Login() {
 
           <div className="register-link">
             <p>
-              Don't have an account? <a href="#">Register</a>
+              Don't have an account? <Link to="/register">Register</Link>
             </p>
-          </div>
-          <div className="register-btn-bin">
-            <button type="submit" className="register-btn" onClick={handleData}>
-              Register Test User
-            </button>
           </div>
 
           {error && <p style={{ color: "red" }}>{error}</p>}
