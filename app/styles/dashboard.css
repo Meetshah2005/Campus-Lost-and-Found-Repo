@@ -112,6 +112,11 @@ body {
   font-size: 14px;
   margin-top: 6px;
 }
+.item .date-lost {
+  color: #2b2b2b;
+  font-size: 14px;
+  margin-top: 6px;
+}
 
 /* Report Found button stuff */
 

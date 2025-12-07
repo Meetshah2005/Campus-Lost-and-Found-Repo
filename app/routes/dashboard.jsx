@@ -1,3 +1,4 @@
+import LostItem from "../components/LostItem";
 export const links = () => [
   { rel: "stylesheet", href: "/app/styles/dashboard.css" },
 ];
@@ -18,78 +19,56 @@ export default function Dashboard() {
       </nav>
 
       <div className="feed">
-        <div className="item">
-          <img src="/images/backpack.png" alt="Lost Item" />
-          <div className="info">
-            <div className="title">Black Backpack</div>
-            <div className="location">Hillman Library</div>
-            <button className="report-button">Report Found</button>
-          </div>
-        </div>
-
-        <div className="item">
-          <img src="/images/airpods.png" alt="Lost Item" />
-          <div className="info">
-            <div className="title">AirPods Case</div>
-            <div className="location">Cathedral 3rd Floor</div>
-            <button className="report-button">Report Found</button>
-          </div>
-        </div>
-
-        <div className="item">
-          <img src="/images/bottle.png" alt="Lost Item" />
-          <div className="info">
-            <div className="title">Pitt Water Bottle</div>
-            <div className="location">Market</div>
-            <button className="report-button">Report Found</button>
-          </div>
-        </div>
-        <div className="item">
-          <img src="/images/hydroflask.png" alt="Lost Item" />
-          <div className="info">
-            <div className="title">Blue Hydro Flask</div>
-            <div className="location">Benedum</div>
-            <button className="report-button">Report Found</button>
-          </div>
-        </div>
-
-        <div className="item">
-          <img src="/images/watch.png" alt="Lost Item" />
-          <div className="info">
-            <div className="title">Apple Watch Series 7</div>
-            <div className="location">Rec Center Locker Room</div>
-            <button className="report-button">Report Found</button>
-          </div>
-        </div>
-
-        <div className="item">
-          <img src="/images/keychain.png" alt="Lost Item" />
-          <div className="info">
-            <div className="title">Pitt Panther Keychain</div>
-            <div className="location">William Pitt Union</div>
-            <button className="report-button">Report Found</button>
-          </div>
-        </div>
-
-        <div className="item">
-          <img src="/images/calc.png" alt="Lost Item" />
-          <div className="info">
-            <div className="title">TI-84+ Calculator</div>
-            <div className="location">Thackeray Hall 213</div>
-            <button className="report-button">Report Found</button>
-          </div>
-        </div>
-
-        <div className="item">
-          <img src="/images/earring.png" alt="Lost Item" />
-          <div className="info">
-            <div className="title">Golden Earrings</div>
-            <div className="location">Cathy Ground Floor Bathroom</div>
-            <button className="report-button">Report Found</button>
-          </div>
-        </div>
-
+        <LostItem
+          image="/images/backpack.png"
+          title="Black Backpack"
+          location="Hillman Library"
+          date="12/21/2025"
+        />
+        <LostItem
+          image="/images/airpods.png"
+          title="AirPods Case"
+          location="Cathedral 3rd Floor"
+          date="12/18/2025"
+        />
+        <LostItem
+          image="/images/bottle.png"
+          title="Pitt Water Bottle"
+          location="Market"
+          date="12/15/2025"
+        />
+        <LostItem
+          image="/images/hydroflask.png"
+          title="Blue Hydro Flask"
+          location="Benedum"
+          date="12/11/2025"
+        />
+        <LostItem
+          image="/images/watch.png"
+          title="Apple Watch Series 7"
+          location="Rec Center Locker Room"
+          date="12/20/2025"
+        />
+        <LostItem
+          image="/images/keychain.png"
+          title="Pitt Panther Keychain"
+          location="William Pitt Union"
+          date="12/19/2025"
+        />
+        <LostItem
+          image="/images/calc.png"
+          title="TI-84+ Calculator"
+          location="Thackeray Hall 213"
+          date="12/16/2025"
+        />
+        <LostItem
+          image="/images/earring.png"
+          title="Golden Earrings"
+          location="Cathy Ground Floor Bathroom"
+          date="12/14/2025"
+        />
       </div>
+
       <button className="add-button">+</button>
     </>
   );
