@@ -10,7 +10,7 @@ The project is a Campus Lost and Found web application designed to help universi
 
 
 # **Run Instruction**
-#### 0. If wanted, make a destination folder to house the repo within
+#### 0. If necessary, create a containg foler to house the project file
 
 #### 1. Clone the repo
 ```shell
