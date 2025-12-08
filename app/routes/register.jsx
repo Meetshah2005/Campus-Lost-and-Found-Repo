@@ -36,7 +36,7 @@ export default function Register() {
     };
     
     return (
-        <main className="registration-page">
+        <main className="login-page">
         <div className="wrapper">
         <h1>Register</h1>
 
