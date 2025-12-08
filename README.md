@@ -43,4 +43,13 @@ npm run start-all
 ```shell
 http://localhost:5173/
 ```
+| Roles | Member |
+|------|--------|
+| Scrum Master| Meet |
+|Product Owner|Aayush|
+|Developer| Aidan|
+|Developer|Kyle|
+|Developer|Greg|
+|Developer| Daniel |
+
 
