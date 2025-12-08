@@ -67,7 +67,7 @@ export default function Dashboard() {
         image: "",
       });
       setOpen(false);
-      
+
       // Revalidate to refresh the data
       revalidator.revalidate();
     } catch (error) {
@@ -120,28 +120,29 @@ export default function Dashboard() {
 
       <div className="feed">
         {items.map((item) => (
-          <LostItem
-            key={item.id}
-            id = {item.id}{...item}
-          />
+          <LostItem key={item.id} id={item.id} {...item} />
         ))}
       </div>
 
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
-          <button id="add-button" className="add-button">+</button>
+          <button id="add-button" className="add-button">
+            +
+          </button>
         </DialogTrigger>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Add New Item</DialogTitle>
+        <DialogContent className="form">
+          <DialogHeader className="header_form">
+            <DialogTitle className="header_title">
+              <p>Add New Item</p>
+            </DialogTitle>
             <DialogDescription>
-              Add a new lost or found item to the system.
+              <p>Add a new lost or found item to the system</p>
             </DialogDescription>
           </DialogHeader>
           <form onSubmit={handleSubmit}>
-            <div className="grid gap-4 py-4">
+            <div className="grid gap-4 py-4 grid_spacing">
               <div className="grid gap-2">
-                <Label htmlFor="title">Title</Label>
+                <Label htmlFor="title">Item Name</Label>
                 <Input
                   id="title"
                   name="title"
@@ -185,25 +186,30 @@ export default function Dashboard() {
                 />
                 {formData.image && (
                   <div className="mt-2">
-                    <img 
-                      src={formData.image} 
-                      alt="Preview" 
+                    <img
+                      src={formData.image}
+                      alt="Preview"
                       className="max-w-full h-32 object-contain rounded-md border"
                     />
                   </div>
                 )}
               </div>
             </div>
-            <DialogFooter>
+            <DialogFooter className="form_footer">
               <Button
                 type="button"
                 variant="outline"
                 onClick={() => setOpen(false)}
                 disabled={isSubmitting}
+                className="form_cancel_btn"
               >
-                Cancel
+                <p>Cancel</p>
               </Button>
-              <Button type="submit" disabled={isSubmitting}>
+              <Button
+                type="submit"
+                disabled={isSubmitting}
+                className="form_item_btn"
+              >
                 {isSubmitting ? "Adding..." : "Add Item"}
               </Button>
             </DialogFooter>

@@ -1,6 +1,6 @@
 body {
-  background-color: #2b2b2b; 
-  margin: 0;  
+  background-color: #2b2b2b;
+  margin: 0;
   padding: 0;
 }
 
@@ -80,7 +80,9 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .item:hover {
@@ -122,7 +124,7 @@ body {
 
 .report-button {
   margin-top: 12px;
-  background-color: #B22B14;
+  background-color: #b22b14;
   border: none;
   padding: 8px 12px;
   color: #e8e9ee;
@@ -159,4 +161,42 @@ body {
 .add-button:hover {
   background: hsl(0, 73.7%, 60%);
   transform: scale(1.05);
+}
+
+/* Form CSS */
+
+.form {
+  font-family: "Inter";
+  background: #003594;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 53, 148, 1) 0%,
+    rgba(0, 26, 74, 1) 80%
+  );
+}
+
+.header_form {
+  display: flex;
+  align-items: center;
+}
+
+.header_form .header_title {
+  font-size: 28px;
+}
+
+.grid_spacing {
+  row-gap: 25px;
+}
+
+.form_footer {
+  margin-top: 20px;
+}
+
+.form_cancel_btn:hover {
+  background: hsl(0, 73.7%, 50%);
+}
+
+.form_item_btn:hover {
+  background: #3366ff;
+  color: white;
 }
