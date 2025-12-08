@@ -47,11 +47,11 @@ http://localhost:5173/
 # **Memebers**
 | Roles | Member |
 |------|--------|
-| Scrum Master| Meet |
-|Product Owner|Aayush|
-|Developer| Aidan|
-|Developer|Kyle|
-|Developer|Greg|
-|Developer| Daniel |
+|Scrum Master|Meet Shah|
+|Product Owner|Aayush Shah|
+|Developer|Aidan Liddy|
+|Developer|Kyle Molz|
+|Developer|Greg Batron|
+|Developer|Daniel Gornick|
 
 
