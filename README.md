@@ -2,6 +2,14 @@
 
 The project is a Campus Lost and Found web application designed to help university students recover lost items. Users can report items they have lost, including details such as a description, images, and the location where the item was lost. Other users who find these items can respond with information, images, and the item's location, or post that the item is found, facilitating faster recovery.
 
+# **System Architecture**
+
+The Campus Lost & Found system uses a simple 3-tier architecture:
+- Frontend — React + Vite: Renders UI pages (login, register, dashboards), sends requests to backend API, and displays responses from backend Fast development server 
+- Backend — Node.js: Handles routes for login, register, and testing API, reads/writes user data from the JSON database, and acts as the middleware between frontend and data layer
+- Database — JSON File Storage: lightweight and easy for early-stage development
+Stores(Registered users & Login credentials) and enables quick testing without a full database
+
 ## **Design Goals**
 
 - DG1 Ease & Efficiency of Recovery: The system should minimize direct interaction between the user who lost an item and the user who found it. Under normal circumstances, the recovery process should require no more than 2 user interactions and it ensures that the item can be retrieved quickly and efficiently.
