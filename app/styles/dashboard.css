@@ -140,7 +140,7 @@ body {
   position: fixed;
   bottom: 28px;
   right: 22px;
-  background: #ffb81c;
+  background: hsl(0, 73.7%, 41.8%);
   border: none;
   font-size: 26px;
 
@@ -157,6 +157,6 @@ body {
 }
 
 .add-button:hover {
-  background: #ffca4d;
+  background: hsl(0, 73.7%, 60%);
   transform: scale(1.05);
 }

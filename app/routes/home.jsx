@@ -38,7 +38,7 @@ export default function Home() {
           item on University of Pittsburgh campus.{" "}
         </p>
         <NavLink to="/login">
-          <Button>Sign Up Today</Button>
+          <Button>Start</Button>
         </NavLink>
       </div>
     </main>
