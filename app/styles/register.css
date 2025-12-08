@@ -119,3 +119,7 @@
   transform: scale(1.025);
   opacity: 0.9;
 }
+
+.login-link p a:hover {
+  text-decoration: underline;
+}

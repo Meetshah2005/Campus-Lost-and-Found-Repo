@@ -7,37 +7,36 @@ export const links = () => [
 ];
 
 export default function Register() {
-    const [error, setError] = useState(null);
+  const [error, setError] = useState(null);
 
+  const [data, setData] = useState({
+    universityEmail: "",
+    password: "",
+    name: "",
+    contactDetails: "",
+  });
 
-    const [data, setData] = useState({
-        universityEmail: "",
-        password: "",
-        name: "",
-        contactDetails: "",
-    });
+  let navigate = useNavigate();
 
-    let navigate = useNavigate();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      //Potentially some requirement handling here? (special characters, length)
+      const submission = await createUser(data);
+      console.log("Success! Created user data");
+      navigate("/login"); //Redirect to login page on success
+    } catch (error) {
+      console.error("Error during POST request: ", error);
+    }
+  };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try{
-            //Potentially some requirement handling here? (special characters, length)
-            const submission = await createUser(data)
-            console.log("Success! Created user data");
-            navigate("/login"); //Redirect to login page on success
-        }catch (error){
-            console.error("Error during POST request: ", error);
-        }
-    };
+  const handleUpdates = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
 
-    const handleUpdates = (e) => {
-        setData({...data, [e.target.name]: e.target.value});
-    };
-    
-    return (
-        <main className="login-page">
-        <div className="wrapper">
+  return (
+    <main className="login-page">
+      <div className="wrapper">
         <h1>Register</h1>
 
         <form onSubmit={handleSubmit}>
@@ -86,8 +85,10 @@ export default function Register() {
             Register
           </button>
 
-          <div className = "login-link">
-            Already have an account? <Link to="/login">Login</Link>
+          <div className="login-link">
+            <p>
+              Already have an account? <Link to="/login">Login</Link>
+            </p>
           </div>
 
           {error && <p style={{ color: "red" }}>{error}</p>}
